@@ -75,5 +75,24 @@ public:
             //5b: exit
             return;
         } 
+       //step 6: if the values in the data field of the new node is less than of the parent
+        if (x < parent->info) 
+        {
+            //6a: make the left child of the parent point to the new node
+            parent->leftchild = newNode;
+
+            //6b: exit
+            return;
+        } 
+        //step 7: if the values in the data field of the new node is greater than of the parent
+        else if (x > parent->info) 
+        {
+            //7a: make the right child of the parent point to the new node
+            parent->rightchild = newNode;
+
+            //7b: exit
+            return;
+        }
+        
     }
 }

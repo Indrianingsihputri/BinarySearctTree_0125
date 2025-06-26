@@ -54,6 +54,12 @@ public:
 
         //step 1: allocate memory for the new node
         Node *newNode = new Node();
+//step 2: assign values to the data fields of new node
+        newNode->info = x;
+
+        //step 3: make the left and right child of the new node point to null
+        newNode->leftchild = nullptr;
+        newNode->rightchild = nullptr;
 
     }
 }

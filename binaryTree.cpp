@@ -140,3 +140,13 @@ public:
     }
    
 }
+
+int main()
+{
+    Binarytree x;
+    while (true)
+    {
+        BinaryTree x;
+    
+    }
+}

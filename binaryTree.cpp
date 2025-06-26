@@ -26,4 +26,24 @@ public:
     {
         root = nullptr; // Initialize root to nullptr
     }
+
+    // Function to insert a new node with given value
+    void insert(int element, Node *&parent, Node *&currentNode)
+    {
+        //this function searches the currentnode of the specified node as well as current node of its parent
+
+        currentNode = root;
+        parent = nullptr; // Initialize parent to nullptr
+        while ((currentNode != nullptr) && (currentNode->info != element)) 
+        {
+            parent = currentNode;
+            if (element < currentNode->info) 
+                currentNode = currentNode->leftchild;
+            else
+                currentNode = currentNode->rightchild;
+            
+        }
+
+    }
+
 };

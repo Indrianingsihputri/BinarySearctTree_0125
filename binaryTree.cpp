@@ -16,3 +16,14 @@ class Node {
     }
 };
 
+class Binarytree
+{
+public:
+    Node *root;
+
+    //constructor for the Binarytree class
+    Binarytree()
+    {
+        root = nullptr; // Initialize root to nullptr
+    }
+};
